@@ -1,0 +1,895 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "932fef49",
+   "metadata": {
+    "papermill": {
+     "duration": 0.005764,
+     "end_time": "2024-05-13T05:54:55.396011",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:55.390247",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/strings-and-dictionaries).**\n",
+    "\n",
+    "---\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "db39b3eb",
+   "metadata": {
+    "papermill": {
+     "duration": 0.004772,
+     "end_time": "2024-05-13T05:54:55.406595",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:55.401823",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "You are almost done with the course. Nice job!\n",
+    "\n",
+    "We have a couple more interesting problems for you before you go. \n",
+    "\n",
+    "As always, run the setup code below before working on the questions."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "1c90bfff",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:55.419542Z",
+     "iopub.status.busy": "2024-05-13T05:54:55.419120Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.357741Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.356224Z"
+    },
+    "papermill": {
+     "duration": 0.947762,
+     "end_time": "2024-05-13T05:54:56.359978",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:55.412216",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Setup complete.\n"
+     ]
+    }
+   ],
+   "source": [
+    "from learntools.core import binder; binder.bind(globals())\n",
+    "from learntools.python.ex6 import *\n",
+    "print('Setup complete.')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "334911f9",
+   "metadata": {
+    "papermill": {
+     "duration": 0.005114,
+     "end_time": "2024-05-13T05:54:56.370332",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.365218",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "Let's start with a string lightning round to warm up. What are the lengths of the strings below?\n",
+    "\n",
+    "For each of the five strings below, predict what `len()` would return when passed that string. Use the variable `length` to record your answer, then run the cell to check whether you were right.  \n",
+    "\n",
+    "# 0a."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "be05ae0e",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.382349Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.381830Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.391860Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.390793Z"
+    },
+    "papermill": {
+     "duration": 0.018574,
+     "end_time": "2024-05-13T05:54:56.394179",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.375605",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.3333333333333333, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"0.1_ZA\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct:</span> \n",
+       "\n",
+       "The empty string has length zero. Note that the empty string is also the only string that Python considers as False when converting to boolean."
+      ],
+      "text/plain": [
+       "Correct: \n",
+       "\n",
+       "The empty string has length zero. Note that the empty string is also the only string that Python considers as False when converting to boolean."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "a = \"\"\n",
+    "length = 0\n",
+    "q0.a.check()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c87482ab",
+   "metadata": {
+    "papermill": {
+     "duration": 0.005306,
+     "end_time": "2024-05-13T05:54:56.405114",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.399808",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 0b."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "7fdd7a1a",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.417559Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.417201Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.426229Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.425108Z"
+    },
+    "papermill": {
+     "duration": 0.017954,
+     "end_time": "2024-05-13T05:54:56.428450",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.410496",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.3333333333333333, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"0.2_ZB\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct:</span> \n",
+       "\n",
+       "Keep in mind Python includes spaces (and punctuation) when counting string length."
+      ],
+      "text/plain": [
+       "Correct: \n",
+       "\n",
+       "Keep in mind Python includes spaces (and punctuation) when counting string length."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "b = \"it's ok\"\n",
+    "length = 7\n",
+    "q0.b.check()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fc78b607",
+   "metadata": {
+    "papermill": {
+     "duration": 0.005464,
+     "end_time": "2024-05-13T05:54:56.439861",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.434397",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 0c."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "8c6d067b",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.453409Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.453009Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.462329Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.460777Z"
+    },
+    "papermill": {
+     "duration": 0.018894,
+     "end_time": "2024-05-13T05:54:56.464621",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.445727",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.3333333333333333, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"0.3_ZC\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct:</span> \n",
+       "\n",
+       "Even though we use different syntax to create it, the string `c` is identical to `b`. In particular, note that the backslash is not part of the string, so it doesn't contribute to its length."
+      ],
+      "text/plain": [
+       "Correct: \n",
+       "\n",
+       "Even though we use different syntax to create it, the string `c` is identical to `b`. In particular, note that the backslash is not part of the string, so it doesn't contribute to its length."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "c = 'it\\'s ok'\n",
+    "length = 7\n",
+    "q0.c.check()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "70b3b1f8",
+   "metadata": {
+    "papermill": {
+     "duration": 0.006746,
+     "end_time": "2024-05-13T05:54:56.477327",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.470581",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 0d."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "f875ac63",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.490891Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.490481Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.500105Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.498914Z"
+    },
+    "papermill": {
+     "duration": 0.019083,
+     "end_time": "2024-05-13T05:54:56.502358",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.483275",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.3333333333333333, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"0.4_ZD\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct:</span> \n",
+       "\n",
+       "The fact that this string was created using triple-quote syntax doesn't make any difference in terms of its content or length. This string is exactly the same as `'hey'`."
+      ],
+      "text/plain": [
+       "Correct: \n",
+       "\n",
+       "The fact that this string was created using triple-quote syntax doesn't make any difference in terms of its content or length. This string is exactly the same as `'hey'`."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "d = \"\"\"hey\"\"\"\n",
+    "length = 3\n",
+    "q0.d.check()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bfb961f1",
+   "metadata": {
+    "papermill": {
+     "duration": 0.005909,
+     "end_time": "2024-05-13T05:54:56.514597",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.508688",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 0e."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "dfc91efc",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.528900Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.528511Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.538351Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.537319Z"
+    },
+    "papermill": {
+     "duration": 0.019697,
+     "end_time": "2024-05-13T05:54:56.540408",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.520711",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.3333333333333333, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"0.5_ZE\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct:</span> \n",
+       "\n",
+       "The newline character is just a single character! (Even though we represent it to Python using a combination of two characters.)"
+      ],
+      "text/plain": [
+       "Correct: \n",
+       "\n",
+       "The newline character is just a single character! (Even though we represent it to Python using a combination of two characters.)"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "e = '\\n'\n",
+    "length = 1\n",
+    "q0.e.check()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5d4df21a",
+   "metadata": {
+    "papermill": {
+     "duration": 0.006222,
+     "end_time": "2024-05-13T05:54:56.553431",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.547209",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 1.\n",
+    "\n",
+    "There is a saying that \"Data scientists spend 80% of their time cleaning data, and 20% of their time complaining about cleaning data.\" Let's see if you can write a function to help clean US zip code data. Given a string, it should return whether or not that string represents a valid zip code. For our purposes, a valid zip code is any string consisting of exactly 5 digits.\n",
+    "\n",
+    "HINT: `str` has a method that will be useful here. Use `help(str)` to review a list of string methods."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "1b18d35d",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.568898Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.568558Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.577399Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.576364Z"
+    },
+    "papermill": {
+     "duration": 0.019222,
+     "end_time": "2024-05-13T05:54:56.579625",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.560403",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.3333333333333333, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"1_ZipValidator\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct</span>"
+      ],
+      "text/plain": [
+       "Correct"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "def is_valid_zip(zip_code):\n",
+    "    \"\"\"Returns whether the input string is a valid (5 digit) zip code\n",
+    "    \"\"\"\n",
+    "#     help(str.isdigit)\n",
+    "#     for i in range(len(zip_code)-1):\n",
+    "    \n",
+    "#     if zip_code.isdigit() and len(zip_code) == 5:\n",
+    "#             return True\n",
+    "\n",
+    "#     return False\n",
+    "\n",
+    "    return True if zip_code.isdigit() and len(zip_code) == 5 else False\n",
+    "\n",
+    "# Check your answer\n",
+    "q1.check()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "de93f112",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.594891Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.594507Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.602440Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.601523Z"
+    },
+    "papermill": {
+     "duration": 0.017939,
+     "end_time": "2024-05-13T05:54:56.604499",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.586560",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"1_ZipValidator\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint:</span> Try looking up `help(str.isdigit)`"
+      ],
+      "text/plain": [
+       "Hint: Try looking up `help(str.isdigit)`"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "q1.hint()\n",
+    "#q1.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c8a3bbdd",
+   "metadata": {
+    "papermill": {
+     "duration": 0.007155,
+     "end_time": "2024-05-13T05:54:56.618537",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.611382",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 2.\n",
+    "\n",
+    "A researcher has gathered thousands of news articles. But she wants to focus her attention on articles including a specific word. Complete the function below to help her filter her list of articles.\n",
+    "\n",
+    "Your function should meet the following criteria:\n",
+    "\n",
+    "- Do not include documents where the keyword string shows up only as a part of a larger word. For example, if she were looking for the keyword “closed”, you would not include the string “enclosed.” \n",
+    "- She does not want you to distinguish upper case from lower case letters. So the phrase “Closed the case.” would be included when the keyword is “closed”\n",
+    "- Do not let periods or commas affect what is matched. “It is closed.” would be included when the keyword is “closed”. But you can assume there are no other types of punctuation."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "496dc12c",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.634747Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.634387Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.643486Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.642360Z"
+    },
+    "papermill": {
+     "duration": 0.019519,
+     "end_time": "2024-05-13T05:54:56.645586",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.626067",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 4, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"2_WordSearch\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#ccaa33\">Check:</span> When you've updated the starter code, `check()` will tell you whether your code is correct. "
+      ],
+      "text/plain": [
+       "Check: When you've updated the starter code, `check()` will tell you whether your code is correct. "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "def word_search(doc_list, keyword):\n",
+    "    \"\"\"\n",
+    "    Takes a list of documents (each document is a string) and a keyword. \n",
+    "    Returns list of the index values into the original list for all documents \n",
+    "    containing the keyword.\n",
+    "\n",
+    "    Example:\n",
+    "    doc_list = [\"The Learn Python Challenge Casino.\", \"They bought a car\", \"Casinoville\"]\n",
+    "    >>> word_search(doc_list, 'casino')\n",
+    "    >>> [0]\n",
+    "    \"\"\"\n",
+    "    pass\n",
+    "\n",
+    "# Check your answer\n",
+    "q2.check()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "7bcfa492",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.661699Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.661332Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.665669Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.664612Z"
+    },
+    "papermill": {
+     "duration": 0.014861,
+     "end_time": "2024-05-13T05:54:56.667735",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.652874",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "#q2.hint()\n",
+    "#q2.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "289a30d7",
+   "metadata": {
+    "papermill": {
+     "duration": 0.006814,
+     "end_time": "2024-05-13T05:54:56.681900",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.675086",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 3.\n",
+    "\n",
+    "Now the researcher wants to supply multiple keywords to search for. Complete the function below to help her.\n",
+    "\n",
+    "(You're encouraged to use the `word_search` function you just wrote when implementing this function. Reusing code in this way makes your programs more robust and readable - and it saves typing!)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "887d462e",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.697857Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.697512Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.704626Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.703859Z"
+    },
+    "papermill": {
+     "duration": 0.017479,
+     "end_time": "2024-05-13T05:54:56.706496",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.689017",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 4, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"3_MultiWordSearch\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#ccaa33\">Check:</span> When you've updated the starter code, `check()` will tell you whether your code is correct. "
+      ],
+      "text/plain": [
+       "Check: When you've updated the starter code, `check()` will tell you whether your code is correct. "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "def multi_word_search(doc_list, keywords):\n",
+    "    \"\"\"\n",
+    "    Takes list of documents (each document is a string) and a list of keywords.  \n",
+    "    Returns a dictionary where each key is a keyword, and the value is a list of indices\n",
+    "    (from doc_list) of the documents containing that keyword\n",
+    "\n",
+    "    >>> doc_list = [\"The Learn Python Challenge Casino.\", \"They bought a car and a casino\", \"Casinoville\"]\n",
+    "    >>> keywords = ['casino', 'they']\n",
+    "    >>> multi_word_search(doc_list, keywords)\n",
+    "    {'casino': [0, 1], 'they': [1]}\n",
+    "    \"\"\"\n",
+    "    pass\n",
+    "\n",
+    "# Check your answer\n",
+    "q3.check()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "bdbb6362",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T05:54:56.723850Z",
+     "iopub.status.busy": "2024-05-13T05:54:56.723265Z",
+     "iopub.status.idle": "2024-05-13T05:54:56.726824Z",
+     "shell.execute_reply": "2024-05-13T05:54:56.726064Z"
+    },
+    "papermill": {
+     "duration": 0.014524,
+     "end_time": "2024-05-13T05:54:56.728853",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.714329",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "#q3.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "877bfbd7",
+   "metadata": {
+    "papermill": {
+     "duration": 0.007703,
+     "end_time": "2024-05-13T05:54:56.744147",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.736444",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# Keep Going\n",
+    "\n",
+    "You've learned a lot. But even the best programmers rely heavily on \"libraries\" of code from other programmers. You'll learn about that in **[the last lesson](https://www.kaggle.com/colinmorris/working-with-external-libraries)**.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0f4838c7",
+   "metadata": {
+    "papermill": {
+     "duration": 0.007163,
+     "end_time": "2024-05-13T05:54:56.758991",
+     "exception": false,
+     "start_time": "2024-05-13T05:54:56.751828",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "---\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "*Have questions or comments? Visit the [course discussion forum](https://www.kaggle.com/learn/python/discussion) to chat with other learners.*"
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "none",
+   "dataSources": [],
+   "isGpuEnabled": false,
+   "isInternetEnabled": false,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
+  },
+  "learntools_metadata": {
+   "lesson_index": 5,
+   "type": "exercise"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 4.660713,
+   "end_time": "2024-05-13T05:54:57.287113",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2024-05-13T05:54:52.626400",
+   "version": "2.5.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
