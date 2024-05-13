@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "932fef49",
+   "id": "8133de86",
    "metadata": {
     "papermill": {
-     "duration": 0.005764,
-     "end_time": "2024-05-13T05:54:55.396011",
+     "duration": 0.005785,
+     "end_time": "2024-05-13T17:44:52.193891",
      "exception": false,
-     "start_time": "2024-05-13T05:54:55.390247",
+     "start_time": "2024-05-13T17:44:52.188106",
      "status": "completed"
     },
     "tags": []
@@ -21,13 +21,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "db39b3eb",
+   "id": "37667337",
    "metadata": {
     "papermill": {
-     "duration": 0.004772,
-     "end_time": "2024-05-13T05:54:55.406595",
+     "duration": 0.004735,
+     "end_time": "2024-05-13T17:44:52.203819",
      "exception": false,
-     "start_time": "2024-05-13T05:54:55.401823",
+     "start_time": "2024-05-13T17:44:52.199084",
      "status": "completed"
     },
     "tags": []
@@ -43,19 +43,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "1c90bfff",
+   "id": "01383bc3",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:55.419542Z",
-     "iopub.status.busy": "2024-05-13T05:54:55.419120Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.357741Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.356224Z"
+     "iopub.execute_input": "2024-05-13T17:44:52.215852Z",
+     "iopub.status.busy": "2024-05-13T17:44:52.215056Z",
+     "iopub.status.idle": "2024-05-13T17:44:52.957608Z",
+     "shell.execute_reply": "2024-05-13T17:44:52.956163Z"
     },
     "papermill": {
-     "duration": 0.947762,
-     "end_time": "2024-05-13T05:54:56.359978",
+     "duration": 0.751031,
+     "end_time": "2024-05-13T17:44:52.959803",
      "exception": false,
-     "start_time": "2024-05-13T05:54:55.412216",
+     "start_time": "2024-05-13T17:44:52.208772",
      "status": "completed"
     },
     "tags": []
@@ -77,13 +77,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "334911f9",
+   "id": "0c84f8da",
    "metadata": {
     "papermill": {
-     "duration": 0.005114,
-     "end_time": "2024-05-13T05:54:56.370332",
+     "duration": 0.004892,
+     "end_time": "2024-05-13T17:44:52.969873",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.365218",
+     "start_time": "2024-05-13T17:44:52.964981",
      "status": "completed"
     },
     "tags": []
@@ -99,19 +99,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "be05ae0e",
+   "id": "ae9f3cf4",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.382349Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.381830Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.391860Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.390793Z"
+     "iopub.execute_input": "2024-05-13T17:44:52.981899Z",
+     "iopub.status.busy": "2024-05-13T17:44:52.980922Z",
+     "iopub.status.idle": "2024-05-13T17:44:52.989892Z",
+     "shell.execute_reply": "2024-05-13T17:44:52.988914Z"
     },
     "papermill": {
-     "duration": 0.018574,
-     "end_time": "2024-05-13T05:54:56.394179",
+     "duration": 0.01714,
+     "end_time": "2024-05-13T17:44:52.991937",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.375605",
+     "start_time": "2024-05-13T17:44:52.974797",
      "status": "completed"
     },
     "tags": []
@@ -154,13 +154,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "c87482ab",
+   "id": "45dfac3e",
    "metadata": {
     "papermill": {
-     "duration": 0.005306,
-     "end_time": "2024-05-13T05:54:56.405114",
+     "duration": 0.005019,
+     "end_time": "2024-05-13T17:44:53.002320",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.399808",
+     "start_time": "2024-05-13T17:44:52.997301",
      "status": "completed"
     },
     "tags": []
@@ -172,19 +172,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "7fdd7a1a",
+   "id": "da3887d3",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.417559Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.417201Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.426229Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.425108Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.014033Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.013725Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.021516Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.020510Z"
     },
     "papermill": {
-     "duration": 0.017954,
-     "end_time": "2024-05-13T05:54:56.428450",
+     "duration": 0.015974,
+     "end_time": "2024-05-13T17:44:53.023479",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.410496",
+     "start_time": "2024-05-13T17:44:53.007505",
      "status": "completed"
     },
     "tags": []
@@ -227,13 +227,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "fc78b607",
+   "id": "8ae2ce9b",
    "metadata": {
     "papermill": {
-     "duration": 0.005464,
-     "end_time": "2024-05-13T05:54:56.439861",
+     "duration": 0.005161,
+     "end_time": "2024-05-13T17:44:53.034008",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.434397",
+     "start_time": "2024-05-13T17:44:53.028847",
      "status": "completed"
     },
     "tags": []
@@ -245,19 +245,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "8c6d067b",
+   "id": "2bbf8bb9",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.453409Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.453009Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.462329Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.460777Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.046385Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.045774Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.053140Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.052272Z"
     },
     "papermill": {
-     "duration": 0.018894,
-     "end_time": "2024-05-13T05:54:56.464621",
+     "duration": 0.015762,
+     "end_time": "2024-05-13T17:44:53.055218",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.445727",
+     "start_time": "2024-05-13T17:44:53.039456",
      "status": "completed"
     },
     "tags": []
@@ -300,13 +300,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "70b3b1f8",
+   "id": "2994c92c",
    "metadata": {
     "papermill": {
-     "duration": 0.006746,
-     "end_time": "2024-05-13T05:54:56.477327",
+     "duration": 0.006493,
+     "end_time": "2024-05-13T17:44:53.067451",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.470581",
+     "start_time": "2024-05-13T17:44:53.060958",
      "status": "completed"
     },
     "tags": []
@@ -318,19 +318,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "f875ac63",
+   "id": "dab2e83a",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.490891Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.490481Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.500105Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.498914Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.081798Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.081210Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.090732Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.089698Z"
     },
     "papermill": {
-     "duration": 0.019083,
-     "end_time": "2024-05-13T05:54:56.502358",
+     "duration": 0.019646,
+     "end_time": "2024-05-13T17:44:53.092763",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.483275",
+     "start_time": "2024-05-13T17:44:53.073117",
      "status": "completed"
     },
     "tags": []
@@ -373,13 +373,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "bfb961f1",
+   "id": "1f1d8606",
    "metadata": {
     "papermill": {
-     "duration": 0.005909,
-     "end_time": "2024-05-13T05:54:56.514597",
+     "duration": 0.005888,
+     "end_time": "2024-05-13T17:44:53.104742",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.508688",
+     "start_time": "2024-05-13T17:44:53.098854",
      "status": "completed"
     },
     "tags": []
@@ -391,19 +391,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "dfc91efc",
+   "id": "3e0d4e21",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.528900Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.528511Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.538351Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.537319Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.118290Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.117948Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.126267Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.125332Z"
     },
     "papermill": {
-     "duration": 0.019697,
-     "end_time": "2024-05-13T05:54:56.540408",
+     "duration": 0.01737,
+     "end_time": "2024-05-13T17:44:53.128244",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.520711",
+     "start_time": "2024-05-13T17:44:53.110874",
      "status": "completed"
     },
     "tags": []
@@ -446,13 +446,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "5d4df21a",
+   "id": "6af4eced",
    "metadata": {
     "papermill": {
-     "duration": 0.006222,
-     "end_time": "2024-05-13T05:54:56.553431",
+     "duration": 0.006069,
+     "end_time": "2024-05-13T17:44:53.140525",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.547209",
+     "start_time": "2024-05-13T17:44:53.134456",
      "status": "completed"
     },
     "tags": []
@@ -468,19 +468,19 @@
   {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "1b18d35d",
+   "id": "3ab690e3",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.568898Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.568558Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.577399Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.576364Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.155328Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.154680Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.163320Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.162420Z"
     },
     "papermill": {
-     "duration": 0.019222,
-     "end_time": "2024-05-13T05:54:56.579625",
+     "duration": 0.018063,
+     "end_time": "2024-05-13T17:44:53.165392",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.560403",
+     "start_time": "2024-05-13T17:44:53.147329",
      "status": "completed"
     },
     "tags": []
@@ -532,19 +532,19 @@
   {
    "cell_type": "code",
    "execution_count": 8,
-   "id": "de93f112",
+   "id": "efa8c98f",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.594891Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.594507Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.602440Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.601523Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.180239Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.179929Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.187759Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.186848Z"
     },
     "papermill": {
-     "duration": 0.017939,
-     "end_time": "2024-05-13T05:54:56.604499",
+     "duration": 0.017889,
+     "end_time": "2024-05-13T17:44:53.189723",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.586560",
+     "start_time": "2024-05-13T17:44:53.171834",
      "status": "completed"
     },
     "tags": []
@@ -582,13 +582,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "c8a3bbdd",
+   "id": "1d4a406a",
    "metadata": {
     "papermill": {
-     "duration": 0.007155,
-     "end_time": "2024-05-13T05:54:56.618537",
+     "duration": 0.006427,
+     "end_time": "2024-05-13T17:44:53.202941",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.611382",
+     "start_time": "2024-05-13T17:44:53.196514",
      "status": "completed"
     },
     "tags": []
@@ -608,19 +608,19 @@
   {
    "cell_type": "code",
    "execution_count": 9,
-   "id": "496dc12c",
+   "id": "7236ac91",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.634747Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.634387Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.643486Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.642360Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.217953Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.217317Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.226518Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.225525Z"
     },
     "papermill": {
-     "duration": 0.019519,
-     "end_time": "2024-05-13T05:54:56.645586",
+     "duration": 0.018978,
+     "end_time": "2024-05-13T17:44:53.228460",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.626067",
+     "start_time": "2024-05-13T17:44:53.209482",
      "status": "completed"
     },
     "tags": []
@@ -629,7 +629,7 @@
     {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 4, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"2_WordSearch\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.3333333333333333, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"2_WordSearch\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -641,10 +641,10 @@
     {
      "data": {
       "text/markdown": [
-       "<span style=\"color:#ccaa33\">Check:</span> When you've updated the starter code, `check()` will tell you whether your code is correct. "
+       "<span style=\"color:#33cc33\">Correct</span>"
       ],
       "text/plain": [
-       "Check: When you've updated the starter code, `check()` will tell you whether your code is correct. "
+       "Correct"
       ]
      },
      "metadata": {},
@@ -663,7 +663,16 @@
     "    >>> word_search(doc_list, 'casino')\n",
     "    >>> [0]\n",
     "    \"\"\"\n",
-    "    pass\n",
+    "    map = []\n",
+    "    \n",
+    "    for i, doc in enumerate(doc_list):\n",
+    "        words = doc.split()\n",
+    "        Words = [word.rstrip('.,').lower() for word in words]\n",
+    "                              \n",
+    "        if keyword.lower() in Words:\n",
+    "            map.append(i)\n",
+    "    \n",
+    "    return map\n",
     "\n",
     "# Check your answer\n",
     "q2.check()"
@@ -672,38 +681,119 @@
   {
    "cell_type": "code",
    "execution_count": 10,
-   "id": "7bcfa492",
+   "id": "a2f98d4f",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.661699Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.661332Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.665669Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.664612Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.243703Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.243143Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.254554Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.253657Z"
     },
     "papermill": {
-     "duration": 0.014861,
-     "end_time": "2024-05-13T05:54:56.667735",
+     "duration": 0.021261,
+     "end_time": "2024-05-13T17:44:53.256568",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.652874",
+     "start_time": "2024-05-13T17:44:53.235307",
      "status": "completed"
     },
     "tags": []
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"2_WordSearch\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint:</span> Some methods that may be useful here: `str.split()`, `str.strip()`, `str.lower()`."
+      ],
+      "text/plain": [
+       "Hint: Some methods that may be useful here: `str.split()`, `str.strip()`, `str.lower()`."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"2_WordSearch\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "def word_search(doc_list, keyword):\n",
+       "    # list to hold the indices of matching documents\n",
+       "    indices = [] \n",
+       "    # Iterate through the indices (i) and elements (doc) of documents\n",
+       "    for i, doc in enumerate(doc_list):\n",
+       "        # Split the string doc into a list of words (according to whitespace)\n",
+       "        tokens = doc.split()\n",
+       "        # Make a transformed list where we 'normalize' each word to facilitate matching.\n",
+       "        # Periods and commas are removed from the end of each word, and it's set to all lowercase.\n",
+       "        normalized = [token.rstrip('.,').lower() for token in tokens]\n",
+       "        # Is there a match? If so, update the list of matching indices.\n",
+       "        if keyword.lower() in normalized:\n",
+       "            indices.append(i)\n",
+       "    return indices\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "def word_search(doc_list, keyword):\n",
+       "    # list to hold the indices of matching documents\n",
+       "    indices = [] \n",
+       "    # Iterate through the indices (i) and elements (doc) of documents\n",
+       "    for i, doc in enumerate(doc_list):\n",
+       "        # Split the string doc into a list of words (according to whitespace)\n",
+       "        tokens = doc.split()\n",
+       "        # Make a transformed list where we 'normalize' each word to facilitate matching.\n",
+       "        # Periods and commas are removed from the end of each word, and it's set to all lowercase.\n",
+       "        normalized = [token.rstrip('.,').lower() for token in tokens]\n",
+       "        # Is there a match? If so, update the list of matching indices.\n",
+       "        if keyword.lower() in normalized:\n",
+       "            indices.append(i)\n",
+       "    return indices\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
    "source": [
-    "#q2.hint()\n",
-    "#q2.solution()"
+    "q2.hint()\n",
+    "q2.solution()"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "289a30d7",
+   "id": "44e41b50",
    "metadata": {
     "papermill": {
-     "duration": 0.006814,
-     "end_time": "2024-05-13T05:54:56.681900",
+     "duration": 0.007124,
+     "end_time": "2024-05-13T17:44:53.271195",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.675086",
+     "start_time": "2024-05-13T17:44:53.264071",
      "status": "completed"
     },
     "tags": []
@@ -719,19 +809,19 @@
   {
    "cell_type": "code",
    "execution_count": 11,
-   "id": "887d462e",
+   "id": "db22fbfd",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.697857Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.697512Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.704626Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.703859Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.288288Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.287421Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.296509Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.295577Z"
     },
     "papermill": {
-     "duration": 0.017479,
-     "end_time": "2024-05-13T05:54:56.706496",
+     "duration": 0.020039,
+     "end_time": "2024-05-13T17:44:53.298539",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.689017",
+     "start_time": "2024-05-13T17:44:53.278500",
      "status": "completed"
     },
     "tags": []
@@ -740,7 +830,7 @@
     {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 4, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"3_MultiWordSearch\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.3333333333333333, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"3_MultiWordSearch\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -752,10 +842,10 @@
     {
      "data": {
       "text/markdown": [
-       "<span style=\"color:#ccaa33\">Check:</span> When you've updated the starter code, `check()` will tell you whether your code is correct. "
+       "<span style=\"color:#33cc33\">Correct</span>"
       ],
       "text/plain": [
-       "Check: When you've updated the starter code, `check()` will tell you whether your code is correct. "
+       "Correct"
       ]
      },
      "metadata": {},
@@ -774,8 +864,11 @@
     "    >>> multi_word_search(doc_list, keywords)\n",
     "    {'casino': [0, 1], 'they': [1]}\n",
     "    \"\"\"\n",
-    "    pass\n",
-    "\n",
+    "    indices = {}\n",
+    "    for keyword in keywords:\n",
+    "        indices[keyword] = word_search(doc_list, keyword)\n",
+    "    return indices\n",
+    "    \n",
     "# Check your answer\n",
     "q3.check()"
    ]
@@ -783,37 +876,76 @@
   {
    "cell_type": "code",
    "execution_count": 12,
-   "id": "bdbb6362",
+   "id": "e48e1659",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-13T05:54:56.723850Z",
-     "iopub.status.busy": "2024-05-13T05:54:56.723265Z",
-     "iopub.status.idle": "2024-05-13T05:54:56.726824Z",
-     "shell.execute_reply": "2024-05-13T05:54:56.726064Z"
+     "iopub.execute_input": "2024-05-13T17:44:53.315078Z",
+     "iopub.status.busy": "2024-05-13T17:44:53.314773Z",
+     "iopub.status.idle": "2024-05-13T17:44:53.322479Z",
+     "shell.execute_reply": "2024-05-13T17:44:53.321536Z"
     },
     "papermill": {
-     "duration": 0.014524,
-     "end_time": "2024-05-13T05:54:56.728853",
+     "duration": 0.018192,
+     "end_time": "2024-05-13T17:44:53.324400",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.714329",
+     "start_time": "2024-05-13T17:44:53.306208",
      "status": "completed"
     },
     "tags": []
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"3_MultiWordSearch\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "def multi_word_search(documents, keywords):\n",
+       "    keyword_to_indices = {}\n",
+       "    for keyword in keywords:\n",
+       "        keyword_to_indices[keyword] = word_search(documents, keyword)\n",
+       "    return keyword_to_indices\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "def multi_word_search(documents, keywords):\n",
+       "    keyword_to_indices = {}\n",
+       "    for keyword in keywords:\n",
+       "        keyword_to_indices[keyword] = word_search(documents, keyword)\n",
+       "    return keyword_to_indices\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
    "source": [
-    "#q3.solution()"
+    "q3.solution()"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "877bfbd7",
+   "id": "5ef23332",
    "metadata": {
     "papermill": {
-     "duration": 0.007703,
-     "end_time": "2024-05-13T05:54:56.744147",
+     "duration": 0.007763,
+     "end_time": "2024-05-13T17:44:53.340685",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.736444",
+     "start_time": "2024-05-13T17:44:53.332922",
      "status": "completed"
     },
     "tags": []
@@ -826,13 +958,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "0f4838c7",
+   "id": "6de2f844",
    "metadata": {
     "papermill": {
-     "duration": 0.007163,
-     "end_time": "2024-05-13T05:54:56.758991",
+     "duration": 0.007666,
+     "end_time": "2024-05-13T17:44:53.356331",
      "exception": false,
-     "start_time": "2024-05-13T05:54:56.751828",
+     "start_time": "2024-05-13T17:44:53.348665",
      "status": "completed"
     },
     "tags": []
@@ -879,14 +1011,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 4.660713,
-   "end_time": "2024-05-13T05:54:57.287113",
+   "duration": 4.092778,
+   "end_time": "2024-05-13T17:44:53.787374",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-05-13T05:54:52.626400",
+   "start_time": "2024-05-13T17:44:49.694596",
    "version": "2.5.0"
   }
  },
